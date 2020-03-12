@@ -24,9 +24,22 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bower_components/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/dist/css/sb-admin-2.css",
+              "node_modules/bower_components/metisMenu/dist/metisMenu.min.css",
+              "node_modules/bower_components/font-awesome/css/font-awesome.min.css",
+              "node_modules/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css",
+              "node_modules/bower_components/datatables-responsive/css/dataTables.responsive.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+                "node_modules/bower_components/jquery/dist/jquery.min.js",
+                "node_modules/bower_components/bootstrap/dist/js/bootstrap.min.js",
+                "node_modules/bower_components/metisMenu/dist/metisMenu.min.js",
+                "node_modules/bower_components/datatables/media/js/jquery.dataTables.min.js",
+                "node_modules/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js",
+                "node_modules/dist/js/sb-admin-2.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -62,7 +75,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "QuanLyNhanSu:build"
+            "browserTarget": "QuanLyNhanSu:build",
+            "host": "0.0.0.0",
+            "port": 6200
           },
           "configurations": {
             "production": {
